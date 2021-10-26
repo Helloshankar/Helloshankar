@@ -1,0 +1,73 @@
+
+<html>
+    <head>
+        <title>animate</title>
+        <style>
+            .div{
+                width:100px;
+                height:100px;
+                background-color:orangered;
+               
+            }
+           
+            .animateone{
+                animation-name:animateone;
+                animation-duration:5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+
+            }
+            @keyframes animateone {
+                from{background-color: red;}
+                to{background-color: cyan;}
+            }
+            .div2{
+                width:100px;
+                height:100px;
+               
+               
+
+            }
+            .animatetwo{
+                animation-name:animatetwo;
+                animation-duration:5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+            }
+            @keyframes animatetwo{
+                0%{background-color: cyan;}
+                25%{background-color:black;}
+                50%{background-color:red;}
+                100%{background-color:yellow;}
+            }
+            .div3{
+                width:100px;
+                height:100px;
+                background-color: aqua;
+                position: relative;
+               
+
+            }
+            .animatethree{
+                animation-name:animatethree;
+                animation-duration:6s;
+                animation-iteration-count:infinite;
+                animation-direction:alternate-reverse;
+            }
+            @keyframes animatethree{
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:200px; top:0px;}
+                50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                100% {background-color:red; left:0px; top:0px;}
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div  class="div animateone" ></div> <br>
+        <div  class="div2 animatetwo" ></div> <br>
+        <div  class="div3 animatethree" ></div> <br>
+        
+    </body>
+</html>
